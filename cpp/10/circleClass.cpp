@@ -15,6 +15,13 @@ circleClass::circleClass(double x, double y, double r = 20) {
     itsX = x;
     itsY = y;
 }
+//copy constructor
+circleClass::circleClass(circleClass& other) {
+    itsR = other.getR();
+    itsX = other.getX();
+    itsY = other.getY();
+    cout<<"circleClass copying"<<endl;
+}
 
 //Destructor
 circleClass::~circleClass()
@@ -61,7 +68,7 @@ double circleClass::getY()
 //prints info for a circle
 void circleClass::print()
 {
-  cout <<"Radius = "<<getR()<<endl;
+  cout <<"R = "<<getR()<<endl;
   cout <<"X = "<<getX()<<endl;
   cout <<"Y = " <<getY()<<endl;
 }

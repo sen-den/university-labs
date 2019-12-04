@@ -16,5 +16,8 @@ int main(){
     c1.setY(y);
     c1.print();
 
+    circleClass c2(c1);
+    c2.print();
+
     return 0;
 };

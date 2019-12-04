@@ -13,6 +13,9 @@ class circleClass
              //constructor
              circleClass(double r, double x, double y);
 
+             //copy constructor
+             circleClass(circleClass& circle);
+
              //Destructor
              ~circleClass();
 
