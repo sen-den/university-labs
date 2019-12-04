@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+#define PI 3.141592
+
 class circleClass
 {
       private:
@@ -36,6 +38,24 @@ class circleClass
 
             //Gets y
             double getY();
+
+            //length, m
+            double length();
+
+            //area, m^2
+            double area();
+
+            //volume, m^3
+            double volume();
+
+            //length, m
+            double length(double r);
+
+            //area, m^2
+            double area(double r);
+
+            //volume, m^3
+            double volume(double r);
 
             void print();
 };

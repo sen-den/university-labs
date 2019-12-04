@@ -19,5 +19,7 @@ int main(){
     circleClass c2(c1);
     c2.print();
 
+    cout << circleClass().length(1) << endl;
+
     return 0;
 };
